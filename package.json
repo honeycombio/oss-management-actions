@@ -1,0 +1,20 @@
+{
+  "name": "integrations-labels",
+  "version": "0.0.1",
+  "description": "A GitHub Action for applying issue/PR labels to Honeycomb integration/SDK projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Maybe there will be tests some day, but today is not that day.\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honeycombio/integrations-labels.git"
+  },
+  "keywords": [],
+  "author": "Robb Kidd <robbkidd@honeycomb.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/honeycombio/integrations-labels/issues"
+  },
+  "homepage": "https://github.com/honeycombio/integrations-labels#readme"
+}
