@@ -80,7 +80,7 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist - Yep. Seems weird, but we'll be checking in builds.
 
 # Gatsby files
 .cache/
