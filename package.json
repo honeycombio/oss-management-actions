@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/honeycombio/integrations-labels/issues"
   },
-  "homepage": "https://github.com/honeycombio/integrations-labels#readme"
+  "homepage": "https://github.com/honeycombio/integrations-labels#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "github-label-sync": "^2.0.0"
+  }
 }
