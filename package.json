@@ -1,6 +1,6 @@
 {
   "name": "integrations-labels",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A GitHub Action for applying issue/PR labels to Honeycomb integration/SDK projects.",
   "main": "index.js",
   "scripts": {
