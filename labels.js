@@ -40,7 +40,8 @@ module.exports = [
        "beginner-friendly",
        "beginner",
        "good-starter-issue",
-       "starter-issue"
+       "starter-issue",
+       "good first issue"
     ]
  },
  {
@@ -57,7 +58,8 @@ module.exports = [
     description: "Out of scope/alignment with the project, or issue is expected, intended behavior.",
     aliases: [
        "wontfix",
-       "wont-fix"
+       "wont-fix",
+       "invalid"
     ]
  },
  {
