@@ -127,6 +127,7 @@ module.exports = [
     description: "The necessary chores to keep the dust off.",
     aliases: [
        "chore",
+       "dependencies",
        "maintenance",
        "refactor",
        "testing",
