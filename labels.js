@@ -134,6 +134,13 @@ module.exports = [
     ]
  },
  {
+    name: "type: dependencies",
+    color: colors.oatmeal,
+    aliases: [
+       "dependancies"
+    ]
+ },
+ {
     name: "type: question",
     color: colors.lavender,
     description: "Questions about usage.",
