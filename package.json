@@ -19,6 +19,7 @@
   "homepage": "https://github.com/honeycombio/integrations-labels#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
+    "@actions/github": "^5.0.0",
     "github-label-sync": "^2.0.0"
   }
 }
