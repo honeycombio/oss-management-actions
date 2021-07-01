@@ -1,0 +1,9 @@
+name: project-management
+description: Automates project management flows for Honeycomb repositories.
+inputs:
+  ghprojects-token:
+    description: The GitHub token used to add issues and prs to projects.
+    required: true
+runs:
+  using: node12
+  main: index.js
