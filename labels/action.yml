@@ -1,0 +1,9 @@
+name: apply-labels
+description: Ensure the common labels are available on Honeycomb projects.
+inputs:
+  github-token:
+    description: The GitHub token used to apply labels.
+    required: true
+runs:
+  using: node12
+  main: index.js
