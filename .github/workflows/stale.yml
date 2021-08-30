@@ -1,0 +1,22 @@
+name: 'Close stale issues and PRs'
+on: workflow_dispatch
+
+jobs:
+  stale:
+    name: 'Close stale issues and PRs'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/stale@v4
+        with:
+          stale-issue-message: 'This issue is stale because it has been open 30 days with no activity.'
+          stale-pr-message: 'This PR is stale because it has been open 30 days with no activity.'
+          stale-issue-label: 'stale'
+          stale-pr-label: 'stale'
+          close-issue-message: 'This PR is being closed due to inactivity. Please see our [Honeycomb OSS Lifecyle and Practices](https://github.com/honeycombio/home/blob/main/honeycomb-oss-lifecycle-and-practices.md).'
+          close-pr-message: 'This PR is being closed due to inactivity. Please see our [Honeycomb OSS Lifecyle and Practices](https://github.com/honeycombio/home/blob/main/honeycomb-oss-lifecycle-and-practices.md).'
+          days-before-stale: 30
+          days-before-close: 7
