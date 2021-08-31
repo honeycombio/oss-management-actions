@@ -2,7 +2,7 @@
 
 A [Github Action](https://github.com/actions/stale) to automate labeling and closing of issues and PRs that have not had activity for a number of days (become stale).
 
-Because this is a built-in stale action, no additional files are needed.
+Because this is a pre-built stale action, no additional files are needed.
 
 The current workflow is only [run on demand](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#manual-events) (`on: workflow_dispatch`) until finalized, then can be adjusted to a schedule via cron job.
 
@@ -12,12 +12,15 @@ See detailed options in [actions/stale#details-options](https://github.com/actio
 
 Used in this workflow:
 
+- `start-date`
 - `stale-issue-message`
 - `stale-pr-message`
-- `stale-issue-label`
-- `stale-pr-label`
-- `days-before-stale`
-- `days-before-close`
+- `close-issue-message`
+- `close-pr-message`
+- `days-before-issue-stale`
+- `days-before-pr-stale`
+- `days-before-issue-close`
+- `days-before-pr-close`
 
 ## Outputs
 
