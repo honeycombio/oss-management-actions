@@ -172,5 +172,10 @@ module.exports = [
     name: "version: no bump",
     color: colors.oatmeal,
     description: "A PR with maintenance or doc changes that aren't included in a release."
+ },
+ {
+    name: "merge at will",
+    color: colors.jade,
+    description: "Reviewer can merge the PR once reviewed."
  }
 ];
