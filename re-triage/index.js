@@ -8,6 +8,7 @@ void async function () {
 		const iceboxColumn = 12117642;
 		const triageColumn = 14962835;
 		const issueUrl = github.context.payload.issue.url;
+		const issueOpen = github.context.payload.issue.state === "open";
 		const accessToken = core.getInput('ghprojects-token');
 		const octokit = github.getOctokit(accessToken);
 		let page = 1;
@@ -15,7 +16,7 @@ void async function () {
 		while (!issueCard) {
 			let response = await octokit.rest.projects.listCards({
 				column_id: iceboxColumn,
-				archived_state: "not_archived",
+				archived_state: issueOpen ? "not_archived" : "archived",
 				per_page: 100,
 				page: page
 			});
