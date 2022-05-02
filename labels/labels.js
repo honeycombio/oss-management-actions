@@ -92,6 +92,11 @@ module.exports = [
     description: "Further information is requested."
  },
  {
+    name: "status: oncall",
+    color: colors.velvet,
+    description: "Flagged for awareness from Honeycomb Telemetry Oncall"
+ },
+ {
     name: "type: bug",
     color: colors.crimson,
     aliases: [
