@@ -179,8 +179,18 @@ module.exports = [
     description: "A PR with maintenance or doc changes that aren't included in a release."
  },
  {
+    name: "breaking-change",
+    color: colors.crimson,
+    description: "Prefer 'version: bump major', but if for some reason a PR introduces a breaking change that isn't bumping the major, use this label."
+ },
+ {
     name: "merge at will",
     color: colors.jade,
     description: "Reviewer can merge the PR once reviewed."
+ },
+ {
+    name: "no-changelog",
+    color: colors.oatmeal,
+    description: "Omit this PR from changelog/release notes."
  }
 ];
