@@ -5,5 +5,5 @@ inputs:
     description: The GitHub token used to add issues and prs to projects.
     required: true
 runs:
-  using: node12
+  using: node16
   main: index.js
