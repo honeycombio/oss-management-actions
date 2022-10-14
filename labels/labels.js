@@ -181,7 +181,7 @@ module.exports = [
  {
     name: "breaking-change",
     color: colors.crimson,
-    description: "Prefer 'version: bump major', but if for some reason a PR introduces a breaking change that isn't bumping the major, use this label."
+    description: "Prefer 'version: bump major', but use this for breaking changes that don't bump major."
  },
  {
     name: "merge at will",
