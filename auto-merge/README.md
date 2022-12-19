@@ -10,6 +10,8 @@ See detailed options in GitHub CLI docs [for working with pull requests](https:/
 
 This workflow uses [`merge`](https://cli.github.com/manual/gh_pr_merge), with the `--auto` flag, which will automatically merge only after necessary requirements are met.
 
+For a smaller first step, use `gh pr review --approve "$PR_URL"` to see what would be approved and confirm it matches expectations before adding the merge step `gh pr merge --auto --merge "$PR_URL"`.
+
 ## Outputs
 
 No outputs.
