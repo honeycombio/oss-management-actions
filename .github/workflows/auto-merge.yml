@@ -1,4 +1,4 @@
-name: Dependabot auto-merge
+name: Dependabot auto-merge dev dependencies
 on: pull_request
 
 permissions:
@@ -15,8 +15,8 @@ jobs:
         uses: dependabot/fetch-metadata@v1.1.1
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Enable auto-merge for Dependabot PRs
-        if: ${{contains(steps.metadata.outputs.dependency-names, 'my-dependency') && steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
+      - name: Enable auto-merge for Dependabot PRs for Dev Dependencies
+        if: ${{contains(steps.metadata.outputs.dependency-type, 'direct:development') && steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
