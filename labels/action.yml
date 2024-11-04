@@ -5,5 +5,5 @@ inputs:
     description: The GitHub token used to apply labels.
     required: true
 runs:
-  using: node16
+  using: node20
   main: index.js
